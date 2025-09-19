@@ -41,9 +41,9 @@ const data = [
     }
 ]
 
-const Testinomials = () => {
+const Testimonials = () => {
   return (
-    <section id='testinomials'>
+    <section id='testimonials'>
       <h5>Reviews from Parents & Clients</h5>
       <h2>Testimonials</h2>
 
@@ -72,4 +72,4 @@ const Testinomials = () => {
   )
 }
 
-export default Testinomials
+export default Testimonials
