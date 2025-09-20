@@ -1,6 +1,19 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
 
+
+@media screen and (max-width:600px) {
+    section {
+        padding: 3rem 1.5rem;
+        margin-bottom: 80px;
+    }
+    header {
+        padding-top: 4rem;
+        padding-bottom: 2rem;
+    }
+}
+
+
 * {
     margin: 0;
     padding: 0;
@@ -21,7 +34,7 @@
 
     --container-width-lg: 75%;
     --container-width-md: 86%;
-    --container-width-sm: 90%;
+    --container-width-sm: 70%;
 
 
     --transition: all 400ms ease;
@@ -47,7 +60,7 @@
 
 .container{
     width: var(--container-width-lg);
-    margin: 0 auto;
+    margin: 20px auto;
 }
 
 h1,
@@ -62,8 +75,9 @@ h1{
 }
 
 section {
-    margin-top: 8rem;
-    height: 100vh;
+    margin-top: 0;
+    height: auto;
+    padding: 6rem 0;
 }
 
 section > h2, section > h5 {
@@ -142,7 +156,8 @@ img{
 header {
     height: 100vh;
     padding-top: 7rem;
-    overflow: hidden;
+    padding-bottom: 7rem;
+    
 }
 .header__container{
     text-align: center;
@@ -201,7 +216,7 @@ header {
 /*  ############### Media Queries (Medium Devices)  ############### */
 @media  screen and (max-width:1024px) {
     header {
-        height: 68vh;
+        height: 70vh;
 
     }
 }
@@ -209,7 +224,7 @@ header {
 /*  ############### Media Queries (Small Devices)  ############### */
 @media  screen and (max-width:600px) {
     header {
-        height: 100vh;
+        height: 130vh;
         }
         .header__socials,
         .scroll__down{
@@ -258,6 +273,7 @@ nav a.active{
     display: grid;
     grid-template-columns: 35% 50%;
     gap: 15%;
+    margin-top: 10rem;
 }
 .about__me{
     width: 100%;
@@ -409,10 +425,11 @@ nav a.active{
 @media  screen and (max-width:600px) {
     .experience__container{
         gap: 1rem;
+        width: 80%;
     }
     .experience__container > div{
-        width: 100%;
-        padding: 2rem 1rem;
+        width: 90%;
+        padding: 1rem 0.1rem;
     }
 }
 
@@ -583,6 +600,7 @@ nav a.active{
     display: grid;
     grid-template-columns: 30% 58%;
     gap: 30px;
+    margin-bottom: 60px;
 }
 .contact__options{
     display: flex;
